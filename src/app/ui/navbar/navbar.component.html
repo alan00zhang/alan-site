@@ -1,0 +1,9 @@
+<div class="navbar">
+  <div class="tab-wrapper">
+    <div id="navtab-{{index + 1}}" class="tab" *ngFor="let tab of tabs; index as index" [class.active]="selectedTab === tab" 
+    (click)="selectTab(tab)" (mouseenter)="moveUnderline(tab)" (mouseleave)="removeUnderline()">
+      {{tab}}
+    </div>
+  </div>
+  <hr id="navbar-underline" [ngStyle]="underlineStyle" />
+</div>

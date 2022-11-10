@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.tab-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 40px;
+  padding: 0 5px;
+}
+
+.tab {
+  cursor: pointer;
+  flex: 1 1 auto;
+}
+
+hr {
+  position: relative;
+  height: .25rem;
+  background: tomato;
+  border: none;
+}
